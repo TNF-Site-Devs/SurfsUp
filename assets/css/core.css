@@ -13,11 +13,11 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/assets/img/sunset.jpeg');
+    background-image: url('http://repo.zectr.com/Development/Websites/Surfs%20up/assets/img/sunset.jpeg');
     min-height: 85%;
 }
 
 .logoimg {
-  background-image: url('/assets/img/logo.png');
+  background-image: url('http://repo.zectr.com/Development/Websites/Surfs%20up/assets/img/logo.png');
   min-height: 100%;
 }
