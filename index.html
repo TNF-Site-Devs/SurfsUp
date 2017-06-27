@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Welcome one, welcome all.</title>
+    <!--<link rel="stylesheet" href="https://www.m8schools.com/m8css/4/m8.css">-->
+    <link rel="stylesheet" href="/assets/css/m8.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/core.css" />
+    <style>
+    .font-logo {
+      font-family: 'Harlow Solid Std';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 32px;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="m8-container">
+      <div class="m8-cell-row">
+        <div class="m8-cell m8-hide-large m8-hide-medium">
+          <h3 class="m8-hide-large m8-hide-medium m8-text-black m8-center m8-xxxlarge font-logo">Welcome</h3>
+        </div>
+        <div class="m8-cell m8-right m8-hide-large m8-hide-medium">
+          <span class="m8-hover-opacity m8-xxlarge m8-hide-large m8-hide-medium 8-white m8-center" style="margin-top: 15px;" onclick="toggleFunction()"><a><i class="fa fa-bars"></i></a></span>
+        </div>
+      </div>
+      <div class="m8-cell-row">
+        <div class="m8-cell m8-center m8-hide-small">
+          <a href="#" class="m8-center m8-hover-opacity m8-nav-item m8-text-black font-logo"><b>Home</b></a>
+        </div>
+        <div class="m8-cell m8-center m8-hide-small">
+          <a href="#" class="m8-center m8-hover-opacity m8-nav-item m8-text-black font-logo"><b>Shop</b></a>
+        </div>
+        <div class="m8-cell m8-center m8-hide-small">
+          <a href="#" class="m8-center m8-hover-opacity m8-nav-item m8-text-black font-logo"><b>Blog</b></a>
+        </div>
+        <div class="m8-cell m8-center m8-hide-small">
+          <a href="#" class="m8-center m8-hover-opacity m8-nav-item m8-text-black font-logo"><b>Contact Us</b></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="navDemo" class="m8-bar-block m8-white m8-hide m8-hide-large m8-hide-medium">
+      <a href="#about" class="m8-bar-item m8-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="m8-bar-item m8-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="m8-bar-item m8-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="m8-bar-item m8-button">SEARCH</a>
+    </div>
+
+
+
+    <div class="bgimg-1 m8-display-container m8-opacity-min" id="home">
+      <div class="m8-display-middle" style="white-space: nowrap;">
+        <img class="m8-hide-small" src='/assets/img/logo-test.png' />
+        <img class="m8-hide-medium m8-hide-large" src='/assets/img/logo-small.png' />
+      </div>
+    </div>
+    <div class="m8-content m8-container">
+      <div class="m8-container m8-center">
+        <h1 class="font-logo">Lets go!</h1>
+        <p>
+          Whats in our latest collection.
+        </p>
+        <hr />
+      </div>
+      <div class="m8-row-padding m8-center m8-grayscale">
+        <div class="m8-col l3 s6">
+          <div class="m8-card-4">
+            <div class="m8-display-container m8-hover-opacity">
+              <img src="/assets/img/surfer.jpeg" style="width:100%">
+              <span class="m8-tag m8-display-topleft m8-grey">New</span>
+              <p>This surfer dude<br><b>$24.99</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <footer class="m8-center m8-black m8-opacity-min">
+    <div class="m8-center m8-black">
+      <h3>Thank you for comming, see you next time.</h3>
+    </div>
+  </footer>
+  <script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "m8-bar" + " m8-card-2" + " m8-animate-top" + " m8-white";
+        } else {
+            navbar.className = navbar.className.replace(" m8-card-2 m8-animate-top m8-white", "");
+        }
+    }
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("m8-show") == -1) {
+          x.className += " m8-show";
+      } else {
+          x.className = x.className.replace(" m8-show", "");
+      }
+    }
+</script>
+</html>
