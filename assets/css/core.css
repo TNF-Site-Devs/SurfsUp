@@ -13,11 +13,11 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('assets/img/sunset.jpeg');
+    background-image: url('../img/sunset.jpeg');
     min-height: 85%;
 }
 
 .logoimg {
-  background-image: url('assets/img/logo.png');
+  background-image: url('../img/logo.png');
   min-height: 100%;
 }
