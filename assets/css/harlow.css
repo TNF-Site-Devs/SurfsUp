@@ -2,10 +2,10 @@
 
 @font-face {
 	font-family: 'Harlow Solid Std';
-	src: url('HarlowSolidStd.eot');
-	src: url('HarlowSolidStd.eot?#iefix') format('embedded-opentype'),
-		url('HarlowSolidStd.woff') format('woff'),
-		url('HarlowSolidStd.ttf') format('truetype');
+	src: url('../fonts/HarlowSolidStd.eot');
+	src: url('../fonts/HarlowSolidStd.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HarlowSolidStd.woff') format('woff'),
+		url('../fonts/HarlowSolidStd.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
